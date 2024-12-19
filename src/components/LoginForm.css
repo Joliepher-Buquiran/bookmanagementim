@@ -1,0 +1,287 @@
+/* Main container for the login form */
+.login-container1 {
+  width: 500px;
+  margin-left: -600px;
+  padding: 40px;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 191, 174, 0.3);
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  animation: fadeIn 0.5s ease-in-out;
+  border-color: #006f6a;
+  transform: translateX(-20px);
+  border-width: 3px; /* Increase the border thickness */
+  border-style: solid;
+  max-width: 200%;
+  
+  
+}
+.wreath1{
+  position: absolute;
+  margin-left: -280px;
+  margin-top: -100px;
+  width: 200px;
+}
+.bokoora1 {
+  width: 150px;  /* Adjust the width as needed */
+  height: auto;  /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Add some space below the logo */
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+
+/* Form container */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+.user1{
+  position: absolute;
+  margin-top: 15px;
+  margin-left:-18px;
+  font-size: 20px;
+  color: #009f8a;
+}
+.input-icon1 {
+  position: absolute;
+  margin-top: 80px;
+  margin-left:-18px;
+  color: #009f8a; /* Teal color */
+  font-size: 20px;
+}
+
+/* Input field styling */
+.login-input {
+  margin-bottom: 20px;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  outline: none;
+  border-color: #009f8a;
+  margin-left: 20px;
+  color: #006f6a;
+}
+
+/* Focus state for inputs */
+.login-input:focus {
+  border-color: #006f6a; /* Teal color */
+  box-shadow: 0 0 10px rgba(0, 191, 174, 0.3);
+}
+
+/* Submit button styling */
+.login-button {
+  padding: 14px;
+  background-color: #006f6a; /* Teal color */
+  color: #ffffff;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 500px;
+  
+ 
+}
+
+.login-button:hover {
+  background-color: #009f8a; /* Darker teal color */
+  transform: translateY(-2px);
+}
+
+/* Register button styling */
+.register-button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  background-color: #34495e;
+  color: #ffffff;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  width: 500px;
+  
+}
+
+.register-button:hover {
+  background-color: #2c3e50;
+}
+
+/* "Login via" text styling */
+.login-container p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #006f6a;
+  font-style: italic;
+}
+
+/* Social login container */
+.social-login1 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-logo1 {
+  width: 40px; /* Adjust si* Allow more width for small screens */
+      /* Adjust the width dynamize as needed */
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  
+}
+
+.social-logo1:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Tablets and ipads*/
+@media (max-width: 900px ) and (orientation: portrait) {
+  
+  .login-container1 {
+    width: 600px; /* Adapt width to smaller screens */
+    padding: 20px;
+    box-shadow: none; /* Simplify appearance */
+    align-self: center;
+    margin-left: 30px;
+    height: 500px;
+    
+
+  }
+.user1, .input-icon1{
+  margin-left: 2px;
+}
+
+.bokoora1{
+  align-self: center;
+  margin-right: 20px;
+
+}
+.wreath1{
+  position: absolute;
+  align-self: center;
+  margin-left: -300px;
+  margin-top: -70px;
+}
+ .Slogan1{
+display: none;
+ }
+
+  .login-input {
+    width: 535px; /* Adjust input width */
+    margin-left: 30px;
+   
+  }
+
+  .login-button, .register-button {
+    width: 100%; /* Full width buttons */
+    font-size: 14px;
+  }
+  .footer1
+  {
+    align-self: center;
+    position: absolute;
+    margin-left: 650px;
+    margin-right: -200px;
+  }
+}@media (max-width: 2000px ) and (orientation: landscape){
+.login-container1{
+  transform: translateX(-20px);
+ 
+  margin-left:200px ;
+  
+}
+.footer1{
+ 
+  
+  position: absolute;
+  margin-left: 800px;
+}
+.Slogan1 {
+  display: none; /* Adjust the bottom margin */
+}
+.login-input{
+  border-color: #006f6a;
+}
+}
+
+
+
+/* Ios Screen/ Android Smartphones */
+@media (max-width: 500px){
+.login-container1{
+  width: 290px;
+  margin-left: 50px;
+}
+.login-input{
+  width: 230px;
+}
+.wreath1{
+  margin-left: -130px;
+}
+.footer1{
+  display: none;
+}
+}
+/* Footer styling */
+.footer1 {
+  
+  color:#006f6a;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: -80px;
+  position: relative;
+  left: -450px;
+  
+  
+  
+}
+
+.footer1-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social1 {
+  margin-top: 10px;
+}
+
+.footer-social-logo1 {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  object-fit: cover;
+}
+
+/* Make footer responsive */
+
+.Slogan1{
+ width: 800px; 
+ height: auto;
+  margin-bottom: 500px; 
+  margin-left: 50px;
+  position:absolute;
+margin-top: -520px;
+
+
+}

@@ -1,0 +1,203 @@
+/* RegisterForm.css */
+
+.register-container {
+  width: 500px;
+  margin-left: -900px;
+  padding: 40px;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 191, 174, 0.3);
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  animation: fadeIn 0.5s ease-in-out;
+  border-color: #006f6a;
+  transform: translateX(-20px);
+  border-width: 3px; /* Increase the border thickness */
+  border-style: solid;
+  height: 570px;
+  
+  }
+  .wreath2{
+    position: absolute;
+    margin-left: -250px;
+    margin-top: -100px;
+    width: 200px;
+  }
+  .regLogo {
+    width: 200px;  /* Adjust the width as needed */
+    height: auto;  /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add some space below the logo */
+  }
+  
+  .register-error {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border-radius: 4px;
+  }
+  .user {
+    position: absolute;
+    margin-top: 15px;
+    margin-left:-18px;
+    font-size: 20px;
+    color: #009f8a;
+  }
+  .input-icon {
+    position: absolute;
+    margin-top: 80px;
+    margin-left:-18px;
+    color: #009f8a; /* Teal color */
+    font-size: 20px;
+    
+  }
+  .envelope{
+    position: absolute;
+    margin-top: 150px;
+    margin-left:-18px;
+    font-size: 20px;
+    color: #009f8a;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-input {
+    margin-bottom: 20px;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  outline: none;
+  border-color: #009f8a;
+  margin-left: 20px;
+  color: #006f6a;
+  }
+  
+  .register-input:focus {
+    border-color: #006f6a; /* Teal color */
+  box-shadow: 0 0 10px rgba(0, 191, 174, 0.3);
+  }
+  
+  .register-button {
+    padding: 14px;
+  background-color: #006f6a; /* Teal color */
+  color: #ffffff;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 500px;
+  }
+  
+  .register-button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  .register-button:hover:not(:disabled) {
+    background-color: #009f8a; /* Darker teal color */
+  transform: translateY(-2px);
+  }
+  
+  .register-nav-button {
+    margin-top: 15px;
+  padding: 12px 24px;
+  background-color: #006f6a;
+  color: #ffffff;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  width: 500px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .register-nav-button:hover {
+    background-color: #009f8a;
+    transform: translateY(-2px);
+  }
+  .social-login {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .social-logo {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    
+  }
+  
+  .social-logo:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+    .Slogan{
+      width: 800px; 
+    height: auto;
+     margin-bottom: 500px; 
+     margin-left: 400px;
+    position: absolute;
+    margin-top: -520px;
+
+     
+     }
+
+
+     /* Ipad and Tablets*/
+     @media (max-width: 900px) {
+      .register-container {
+          max-width: 90%; /* Allow more width for small screens */
+          padding: 20px;
+          margin-left: 30px;
+          height: 600px;
+      }
+      .Slogan {
+        display: none;
+      }
+      .register-input{
+        margin-left:30px;
+      }
+      .user, .input-icon,.envelope{
+        margin-left: 1px;
+      }
+      .wreath2{
+        margin-left:-230px;
+        margin-top: -70px;
+      }
+    }
+    /*Sartphones & Tablets*/
+    @media (max-width: 480px) {
+      .register-container{
+        width: 280px;
+      }
+      .register-nav-button{
+       width: 280px;
+      }
+      .wreath2{
+        margin-left: -100px;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translateY(30px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+    }
